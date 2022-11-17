@@ -5,6 +5,11 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-image: url(hatter.jpg);
 }
 
 .flip-card {
@@ -13,6 +18,7 @@ body {
   height: 400px;
   perspective: 1000px;
   border-radius: 20px;
+  display: inline-block;
 }
 
 .flip-card-inner {
@@ -38,17 +44,18 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.381);
 }
 
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  color: rgb(255, 255, 255);
   border-radius: 20px;
 }
 
 .flip-card-back {
   background-color: #146c37;
-  color: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
   transform: rotateY(180deg);
   border-radius: 20px;
 }
